@@ -1,0 +1,79 @@
+#footer
+{
+    background-image: linear-gradient(to right , #1f4788, #1f4788);
+    color: white;
+    padding-top: 50px;
+}
+.footer-img
+{
+    width: 100%;
+}
+.footer-box
+{
+    padding: 20px;
+    justify-content: space-between;
+}
+.footer-box img{
+    height: 90px;
+}
+.footer-box a{
+    text-decoration: none;
+    color: white; 
+}
+.footer-box .fa{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px; 
+}
+.footer-box a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+.footer-box .form-control
+{
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+.footer-box .btn-primary
+{
+    
+    border: none;
+    border-radius: 2px;
+    margin-top: 30px;
+    background-color: #1f4788;
+    box-shadow: -2px 2px 5px rgba(31, 71, 136, 0.75);
+}
+.footer-box .btn-primary:hover{
+    background-color: rgba(31, 71, 136, 0.75);
+}
+.footer-box p
+{
+    display: flex;
+    text-align: justify;
+}
+.footer-box .address{
+    text-align: left;
+}
+hr
+{
+    background: white;
+
+}
+.copyright
+{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.copyright a{
+    text-decoration: none;
+    color: inherit;
+}

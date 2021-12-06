@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    height: 1000vh;
+}
+.container-sub{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
+    background-color: rgba(0, 0, 255, 0.308);
+    opacity: 0;
+    transition: all 3s ease-out;
+}
+.container-sub.show{
+    opacity: 1;
+}
+.email-notify{
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 2s ease;
+}
+.email-notify.show{
+    transform: translateX(0);
+    transform: translateY(-50%);
+    transition: all 2s ease;
+}
+.email-notify.hide{
+    transform: translate(500px , -50%);
+    transition: all 2s ease;
+}
+.email-notify .fa.fa-times{
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.email-notify img{
+    margin-top: 30px;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sign-up{
+    margin-top: 150px;
+    text-align: center;
+}
+.form{
+    padding: 20px 0;
+}
+.form form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+.form form input[type="submit"]
+{
+    background-color:  rgb(19, 7, 192);
+    color: #fff;
+    cursor: pointer;
+}
+.form form input[type="submit"]:hover{
+    background-color:  rgba(19, 7, 192, 0.918);
+}
+.form-copyright{
+    text-align: center;
+    color: grey;
+}
+.form-copyright a{
+    text-decoration: none;
+    color: inherit;
+}

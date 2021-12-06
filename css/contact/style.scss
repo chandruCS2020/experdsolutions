@@ -1,0 +1,61 @@
+@import url('../header/style.min.css');
+@import url('../footer/style.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    scroll-behavior: smooth;
+}
+.contact-form form{
+  padding: 20px;
+  border: 1px solid #1f4788;
+}
+.contact-form form input,textarea{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid #ddd ;
+  padding: 7px 5px;
+  resize: none;
+  border-radius: 2px;
+}
+.contact-form form input[type="submit"]
+{
+    background-color:  #42B72A;
+    letter-spacing: 1.5px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.contact-form form input[type="submit"]:hover{
+    background-color: #1f4788;
+}
+.contact-form p{
+  font-size: 0.9rem;
+}
+.contact-head{
+  display: block;
+}
+.contact-head .contact-title h1{
+  text-transform: capitalize;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #1f4788;
+}
+.contact-head p{
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+@media (max-width:780px){
+  .contact-form .contact-title h1{
+    font-size: 35px;
+  }
+}

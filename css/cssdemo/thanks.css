@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.images img {
+  width: 250px;
+}
+
+.thanks {
+  color: #1f4788;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.para {
+  font-size: 18px;
+  color: #1f4788;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.link a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 2px solid #009ffd;
+  color: gray;
+}
+
+.social-head {
+  font-size: 25px;
+  color: #1f4788;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  margin: 10px;
+  font-size: 30px;
+  color: #009ffd;
+}
+
+.social-icons a .fab {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.social-icons a:hover .fab {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  color: rgba(0, 160, 253, 0.562);
+}
+
+.link {
+  margin: 60px 0;
+}
