@@ -5,8 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Jost", sans-serif;
   scroll-behavior: smooth;
 }
@@ -53,11 +52,9 @@ section {
 }
 
 #services .btn-primary, #testimonials .btn-primary {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   padding: 8px 25px;
   border-radius: 20px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#433ca3), to(#1307c0));
   background-image: linear-gradient(to right, #433ca3, #1307c0);
 }
 
@@ -90,19 +87,11 @@ section {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 20px;
-  -webkit-box-shadow: inset -1px -1px 2px #0d6efd, 2px 10px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -1px -1px 2px #0d6efd, 2px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -1px -1px 2px #0d6efd, 2px 10px 10px rgba(0, 0, 0, 0.1);
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
   text-align: justify;
 }
 
@@ -140,8 +129,7 @@ section {
 }
 
 .social-icons ul {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .social-icons ul li {
@@ -152,33 +140,23 @@ section {
   position: relative;
   width: 80px;
   height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: rgba(255, 255, 255, 0);
   margin: 20px 10px;
   text-decoration: none;
   font-size: 30px;
   border-radius: 50%;
   color: #e2e2e2;
-  -webkit-box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.5s;
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
 
 .social-icons ul li a:hover {
   color: #999;
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-  -webkit-box-shadow: inset -1px -1px 2px #0d6efd, 2px 10px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -1px -1px 2px #0d6efd, 2px 10px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-15px);
+  box-shadow: inset -1px -1px 2px #0d6efd, 2px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .social-icons ul li a .fa {
@@ -216,17 +194,14 @@ section {
 
 .reveal {
   position: relative;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  transform: translateY(100px);
   opacity: 0;
-  -webkit-transition: all 1.5s ease;
   transition: all 1.5s ease;
 }
 
 .reveal.active {
   opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .choose {
@@ -234,33 +209,43 @@ section {
           animation: toptobottom 4s linear infinite;
 }
 
+.whatappBtn a {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: green;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
 @-webkit-keyframes toptobottom {
   0% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   66% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
   100% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
 @keyframes toptobottom {
   0% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   66% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
   100% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 @media (max-width: 780px) {

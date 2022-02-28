@@ -5,24 +5,16 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Jost", sans-serif;
   scroll-behavior: smooth;
 }
 
 .service-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .value-card {
@@ -31,25 +23,16 @@
   background-color: #efefef;
   margin: 20px 0;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 20px;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
 .value-main {
-  -webkit-transform: translateY(45px);
-          transform: translateY(45px);
-  -webkit-transition: all 1s ease;
+  transform: translateY(45px);
   transition: all 1s ease;
 }
 
@@ -59,15 +42,12 @@
 }
 
 .value-para {
-  -webkit-transform: translateY(-45px);
-          transform: translateY(-45px);
-  -webkit-transition: all 0.5s ease;
+  transform: translateY(-45px);
   transition: all 0.5s ease;
 }
 
 .value-card:hover .value-para, .value-card:hover .value-main {
   opacity: 1;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
@@ -76,7 +56,6 @@
 }
 
 .value-icon {
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
@@ -114,7 +93,6 @@
 
 .bod {
   background-color: rgba(31, 71, 136, 0.8);
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
@@ -124,7 +102,6 @@
   position: absolute;
   left: 50%;
   top: 0;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   border-radius: 0px 0px 10px 10px;
   display: none;
@@ -138,7 +115,6 @@
   position: absolute;
   left: 50%;
   bottom: 0;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   border-radius: 10px 10px 0px 0px;
   display: none;
@@ -152,7 +128,6 @@
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   border-radius: 0px 10px 10px 0px;
   display: none;
@@ -166,7 +141,6 @@
   position: absolute;
   top: 50%;
   right: 0;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   display: none;
   border-radius: 10px 0px 0px 10px;
@@ -176,6 +150,22 @@
 
 .value-card:hover .bod-1, .value-card:hover .bod-2, .value-card:hover .bod-3, .value-card:hover .bod-4 {
   display: block;
+}
+
+.whatappBtn a {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: green;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
 }
 
 @-webkit-keyframes bar {
@@ -223,9 +213,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
   z-index: -100;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.5s ease;
+  transform: scale(0);
   transition: all 0.5s ease;
 }
 
@@ -254,8 +242,7 @@
 }
 
 .service-b1::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 5px grey;
-          box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
@@ -274,10 +261,8 @@
 
 .service-head.active {
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   z-index: 100;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -298,8 +283,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 17px;
   margin-bottom: 0;
 }
@@ -334,8 +318,7 @@
 .s-title::after {
   bottom: -0.3rem;
   right: -1rem;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media (max-width: 1300px) {

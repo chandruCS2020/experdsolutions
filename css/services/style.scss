@@ -137,6 +137,21 @@
 .value-card:hover .bod-1,.value-card:hover .bod-2,.value-card:hover .bod-3,.value-card:hover .bod-4{
     display: block;
 }
+.whatappBtn a{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: green;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
 @keyframes bar {
     0% {
         width: 0px;

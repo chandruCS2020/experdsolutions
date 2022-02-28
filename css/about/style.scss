@@ -254,3 +254,18 @@ body{
     color: blue;
     font-weight: 300;
 }
+.whatappBtn a{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: green;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}

@@ -54,6 +54,21 @@
   line-height: 30px;
   font-weight: 500;
 }
+.whatappBtn a{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: green;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
 @media (max-width:780px){
   .contact-form .contact-title h1{
     font-size: 35px;
