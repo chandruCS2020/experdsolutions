@@ -77,6 +77,20 @@
 .pos-quotes .fa{
     font-size: 50px;
 }
+.element{
+    width: 100%;
+    text-align: center;
+    margin: 100px 0;
+}
+.element iframe{
+    width: 700px!important;
+    height: 6000px;
+}
+.title-desc{
+    max-width: 660px;
+    margin: 0 auto;
+    line-height: 30px;
+}
 @media (max-width: 768px) {
     #testimonial{
         padding: 0;
@@ -96,6 +110,9 @@
     }
     #testimonial .carousel-content {
         height: 480px;
+    }
+    .element iframe{
+        width: 95%!important;
     }
 }
 @media (max-width: 576px) {

@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -11,7 +10,6 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear, left bottom, left top, from(#19b5fe), to(#1f4788));
   background: linear-gradient(to top, #19b5fe, #1f4788);
   border-radius: 10px;
 }
@@ -31,7 +29,6 @@
 
 .navbar-brand img {
   height: 60px;
-  -webkit-transition: all 1s linear;
   transition: all 1s linear;
 }
 
@@ -57,7 +54,6 @@
 }
 
 .fa {
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -126,16 +122,9 @@ ol.breadcrumb li + li:before {
   right: -20px;
   bottom: 10px;
   z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: opacity 300ms ease-in-out;
+  justify-content: center;
+  align-items: center;
   transition: opacity 300ms ease-in-out;
   display: none;
   cursor: pointer;
@@ -167,8 +156,7 @@ ol.breadcrumb li + li:before {
 .title::after {
   bottom: -0.3rem;
   right: -1rem;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .chevron1 {
@@ -177,8 +165,7 @@ ol.breadcrumb li + li:before {
   height: 0.48rem;
   opacity: 0;
   left: 30%;
-  -webkit-transform: scale(0.3);
-          transform: scale(0.3);
+  transform: scale(0.3);
   -webkit-animation: move-chevron 3s ease-out infinite;
           animation: move-chevron 3s ease-out infinite;
 }
@@ -205,15 +192,13 @@ ol.breadcrumb li + li:before {
 
 .chevron1:before {
   left: 0;
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
 }
 
 .chevron1:after {
   right: 0;
   width: 50%;
-  -webkit-transform: skewY(30deg);
-          transform: skewY(30deg);
+  transform: skewY(30deg);
 }
 
 @-webkit-keyframes move-chevron {
@@ -222,18 +207,15 @@ ol.breadcrumb li + li:before {
   }
   33.3% {
     opacity: 1;
-    -webkit-transform: translateY(4.8rem) scale(0.5);
-            transform: translateY(4.8rem) scale(0.5);
+    transform: translateY(4.8rem) scale(0.5);
   }
   66.6% {
     opacity: 1;
-    -webkit-transform: translateY(3.12rem);
-            transform: translateY(3.12rem);
+    transform: translateY(3.12rem);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(2.28rem);
-            transform: translateY(2.28rem);
+    transform: translateY(2.28rem);
   }
 }
 
@@ -243,33 +225,27 @@ ol.breadcrumb li + li:before {
   }
   33.3% {
     opacity: 1;
-    -webkit-transform: translateY(4.8rem) scale(0.5);
-            transform: translateY(4.8rem) scale(0.5);
+    transform: translateY(4.8rem) scale(0.5);
   }
   66.6% {
     opacity: 1;
-    -webkit-transform: translateY(3.12rem);
-            transform: translateY(3.12rem);
+    transform: translateY(3.12rem);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(2.28rem);
-            transform: translateY(2.28rem);
+    transform: translateY(2.28rem);
   }
 }
 .reveal {
   position: relative;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  transform: translateY(100px);
   opacity: 0;
-  -webkit-transition: all 3s ease;
   transition: all 3s ease;
 }
 
 .reveal.active {
   opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .container-1 {
@@ -277,26 +253,15 @@ ol.breadcrumb li + li:before {
   width: 100%;
   margin: 0;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: #1f4788;
   z-index: 1000;
 }
 
 .container-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
 }
@@ -311,8 +276,7 @@ ol.breadcrumb li + li:before {
   width: 10px;
   border-radius: 5px;
   background-color: #009ffd;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .square:not(:first-of-type),
@@ -345,13 +309,28 @@ ol.breadcrumb li + li:before {
           animation: animate 1s linear 1.2s alternate infinite;
 }
 
+.whatappBtn a {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: green;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
 @-webkit-keyframes animate {
   from {
     opacity: 0.1;
   }
   to {
-    -webkit-transform: rotate(45deg) scale(1.6);
-            transform: rotate(45deg) scale(1.6);
+    transform: rotate(45deg) scale(1.6);
   }
 }
 
@@ -360,8 +339,7 @@ ol.breadcrumb li + li:before {
     opacity: 0.1;
   }
   to {
-    -webkit-transform: rotate(45deg) scale(1.6);
-            transform: rotate(45deg) scale(1.6);
+    transform: rotate(45deg) scale(1.6);
   }
 }
 @media (max-width: 990px) {

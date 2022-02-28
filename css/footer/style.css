@@ -1,5 +1,4 @@
 #footer {
-  background-image: -webkit-gradient(linear, left top, right top, from(#1f4788), to(#1f4788));
   background-image: linear-gradient(to right, #1f4788, #1f4788);
   color: white;
   padding-top: 50px;
@@ -11,9 +10,7 @@
 
 .footer-box {
   padding: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-box img {
@@ -28,15 +25,9 @@
 .footer-box .fa {
   width: 25px;
   height: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-right: 10px;
 }
@@ -47,8 +38,7 @@
 }
 
 .footer-box .form-control {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
   border-radius: 0;
   margin-top: 25px;
@@ -60,8 +50,7 @@
   border-radius: 2px;
   margin-top: 30px;
   background-color: #1f4788;
-  -webkit-box-shadow: -2px 2px 5px rgba(31, 71, 136, 0.75);
-          box-shadow: -2px 2px 5px rgba(31, 71, 136, 0.75);
+  box-shadow: -2px 2px 5px rgba(31, 71, 136, 0.75);
 }
 
 .footer-box .btn-primary:hover {
@@ -69,8 +58,6 @@
 }
 
 .footer-box p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: justify;
 }
@@ -92,5 +79,12 @@ hr {
 .copyright a {
   text-decoration: none;
   color: inherit;
+}
+
+@media screen and (max-width: 560px) {
+  .footb {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 /*# sourceMappingURL=style.css.map */

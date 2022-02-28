@@ -77,3 +77,10 @@ hr
     text-decoration: none;
     color: inherit;
 }
+@media screen and (max-width:560px) {
+    .footb{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+}

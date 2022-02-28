@@ -259,6 +259,21 @@ animation: animate 1s linear 0.9s alternate infinite;
 .square:nth-of-type(5) {
 animation: animate 1s linear 1.2s alternate infinite;
 }
+.whatappBtn a{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: green;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
 
 @keyframes animate {
 from {
